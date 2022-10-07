@@ -8,11 +8,11 @@ import { FaCaretDown } from 'react-icons/fa';
 
 const Dashboard = () => {
 
-    useEffect(() => {
-        fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
-            .then(response => response.json())
-            .then(data => console.log(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
+    //         .then(response => response.json())
+    //         .then(data => console.log(data))
+    // }, [])
 
     return (
         <div className='dashboard'>

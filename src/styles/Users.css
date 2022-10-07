@@ -22,4 +22,11 @@
     align-items: flex-end;
     text-transform: uppercase;
     color: #545F7D;
+    padding-right: 8px;
+}
+
+.users-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
