@@ -1,0 +1,26 @@
+.dashboard-sidebar {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    width: 200px;
+    margin-top: -15px;
+    padding: 0;
+    left: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+.dashboard-sidebar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.dashboard-sidebar-container p:nth-child(1) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    color: #213F7D;
+}

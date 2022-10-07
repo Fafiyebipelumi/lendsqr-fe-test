@@ -1,0 +1,16 @@
+.nav-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-dashboard-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-dashboard-list p {
+    padding-left: 15px;
+}

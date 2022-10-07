@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "ts-jest": {
+      "isolatedModules": false
+    },
     "lib": [
       "dom",
       "dom.iterable",
