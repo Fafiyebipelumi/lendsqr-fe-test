@@ -30,3 +30,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.loading {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Work Sans';
+}

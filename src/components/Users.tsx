@@ -7,11 +7,21 @@ import { userListsType } from '../types/userLists';
 const Users: React.FC = () => {
 
     const [userLists, setUserLists] = useState<userListsType[]>([]);
+    const [isLoading, setIsLoading] = useState<boolean>(true)
+    const [error, setError] = useState<boolean | null>(null)
 
     useEffect(() => {
         fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
             .then((response) => response.json())
-            .then(data => setUserLists(data))
+            .then(data => {
+                setUserLists(data)
+                setIsLoading(false)
+                setError(null)
+            })
+            .catch(error => {
+                setIsLoading(false)
+                setError(error)
+            })
     }, [])
 
     return (
@@ -25,6 +35,12 @@ const Users: React.FC = () => {
                 <div className='users-heading'><p>Status</p><img src={Filter} alt='filter' width={10} height={10} /></div>
             </div>
             <div>
+                {/* {isLoading && (
+                    <div className='loading'>Loading...</div>
+                )}
+                {error && (
+                    <div>{error}</div>
+                )} */}
                 {userLists.map((user: userListsType) => {
                     return (
                         <div key={user.id}>
